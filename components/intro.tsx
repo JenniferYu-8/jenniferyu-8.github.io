@@ -1,17 +1,22 @@
 "use client";
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { BiLinkExternal } from "react-icons/bi"
 import { BsLinkedin } from "react-icons/bs"
 import { FaGithubSquare } from 'react-icons/fa';
 import { MdEmail } from "react-icons/md";
+import { useInView } from 'react-intersection-observer';
+import { useActiveSectionContext } from '@/context/active-section-context';
+import { useSectionInView } from '@/lib/hooks';
 
 
 export default function Intro() {
+    const { ref } = useSectionInView("Home", 0.5);
+
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
         <div className="flex items-center justify-center">
             <motion.div
                 initial={{ opacity: 0, scale: 0}}
@@ -40,9 +45,9 @@ export default function Intro() {
             <a href="/resume-jennifer-yu.pdf" target="_blank" className="bg-gray-900 text-white px-9 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer">Resume <BiLinkExternal className="opacity-80"/></a>
 
             <div className="flex gap-2"> 
-                <a href="https://www.linkedin.com/in/jennifer-yu-on/" target="_blank" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full border border-black/10 focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer"><BsLinkedin /></a>
-                <a href="https://github.com/JenniferYu-8" target="_blank" className="bg-white p-[0.88rem] text-gray-700 flex items-center gap-2 text-[1.3rem] rounded-full border border-black/10 focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer"><FaGithubSquare /></a>
-                <a href="mailto:jenniferyu.on@gmail.com" className="bg-white p-[0.88rem] text-gray-700 flex items-center gap-2 text-[1.3rem] rounded-full border border-black/10 focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer"><MdEmail /></a>
+                <a href="https://www.linkedin.com/in/jennifer-yu-on/" target="_blank" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full borderBlack focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer dark:bg-white/10 dark:text-white/60"><BsLinkedin /></a>
+                <a href="https://github.com/JenniferYu-8" target="_blank" className="bg-white p-[0.88rem] text-gray-700 flex items-center gap-2 text-[1.3rem] rounded-full borderBlack focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer dark:bg-white/10 dark:text-white/60"><FaGithubSquare /></a>
+                <a href="mailto:jenniferyu.on@gmail.com" className="bg-white p-[0.88rem] text-gray-700 flex items-center gap-2 text-[1.3rem] rounded-full borderBlack focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer dark:bg-white/10 dark:text-white/60"><MdEmail /></a>
 
                 
             </div>
