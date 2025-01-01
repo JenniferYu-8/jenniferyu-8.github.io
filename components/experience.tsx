@@ -25,6 +25,7 @@ export default function Experience() {
                                 border: "1px solid rgba(0, 0, 0, 0.05)",
                                 textAlign: "left",
                                 padding: "1.3rem 2rem",
+                                // transitionDuration: "0.5s",
                             }}
                             contentArrowStyle={{
                                 borderRight: theme === "light" ? '0.4rem solid  #9ca3af': '0.4rem solid rgba(255, 255, 255, 0.3)',
@@ -33,13 +34,14 @@ export default function Experience() {
                             icon={item.icon}
                             iconStyle={{
                                 background: theme === "light" ? "white" : "#192338",
+                                // transitionDuration: "0.5",
                                 border: theme === "light" ? "1px solid rgba(0, 0, 0, 0.05)" : "1px solid rgba(255, 255, 255, 0.05)",
                                 fontSize: "1.5rem",
                             }}
                         >
                             <h3 className="font-semibold capitalize">{item.title}</h3>
                             <p className="font-normal !mt-0">{item.location}</p>
-                            <p className="!mt-1 font-normal text-gray-700 dark:text-gray-100/75">{item.description}</p>
+                            <p className="!mt-1 font-normal text-gray-700 dark:text-gray-100/75 transition-colors duration-500">{item.description}</p>
                         </VerticalTimelineElement>
                     </React.Fragment>
             ))}

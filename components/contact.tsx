@@ -18,8 +18,8 @@ export default function Contact() {
         viewport={{ once: true }}
     >
         <SectionHeading>Contact me</SectionHeading>
-        <p className="text-gray-700 -mt-5 dark:text-gray-100/80">Please contact me directly at <a className="underline" href="mailto:jenniferyu.on@gmail.com">jenniferyu.on@gmail.com</a>{" "} or through this form.</p>
-        <form className="mt-10 flex flex-col dark:text-black" action={async (formData) => {
+        <p className="text-gray-700 -mt-5 dark:text-gray-100/80 transition-colors duration-500">Please contact me directly at <a className="underline" href="mailto:jenniferyu.on@gmail.com">jenniferyu.on@gmail.com</a>{" "} or through this form.</p>
+        <form className="mt-10 flex flex-col dark:text-black transition-colors duration-500" action={async (formData) => {
             const { error } = await sendEmail(formData);
 
             if (error) {
@@ -30,9 +30,9 @@ export default function Contact() {
             toast.success("Email sent successfully!");
         }}>
             <input type="email" required maxLength={500} name="senderEmail" className="h-14 px-4 rounded-lg borderBlack 
-                dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none dark:placeholder-gray-500" placeholder="Your email"/>
+                dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none dark:placeholder-gray-500 duration-500" placeholder="Your email"/>
             <textarea required maxLength={5000} name="message" className="h-52 my-3 rounded-lg borderBlack p-4
-                dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none dark:placeholder-gray-500" placeholder="Your message"/>
+                dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none dark:placeholder-gray-500 duration-500" placeholder="Your message"/>
             <SubmitBtn></SubmitBtn>
         </form>
 
