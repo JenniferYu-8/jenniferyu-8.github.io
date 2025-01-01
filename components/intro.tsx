@@ -27,7 +27,7 @@ export default function Intro() {
                     damping: 20,
                 }}
             >
-                 <Image src="/jyu-logo-colour.png" alt="Jennifer Yu" width="192" height="192" quality="95" priority={true} className="h-24 w-auto drop-shadow-xl"></Image>
+                 <Image src="/jyu-logo-colour.png" alt="Jennifer Yu" width="192" height="192" quality="95" priority={true} className="h-24 w-auto drop-shadow-xl mt-5"></Image>
             </motion.div>
         </div>
         <motion.p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
