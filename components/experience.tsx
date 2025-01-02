@@ -9,7 +9,7 @@ import { useSectionInView } from '@/lib/hooks';
 import { useTheme } from '@/context/theme-context';
 
 export default function Experience() {
-    const { ref } = useSectionInView("Experience", 0.5);
+    const { ref } = useSectionInView("Experience", 0.3);
     const { theme } = useTheme();
   return (
     <section ref={ref} className="scroll-mt-28 mb-28 sm:mb-40 w-full" id="experience">
