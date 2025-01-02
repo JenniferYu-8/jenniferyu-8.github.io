@@ -37,7 +37,7 @@ export default function Project({title, description, tags, imageUrl}: ProjectPro
                     </ul>
                 </div>
                 <div className="mx-auto flex items-center justify-center">
-                    <Image src={imageUrl} alt={title} quality={95} className="sm:absolute top-8 -right-40  h-[20rem] w-auto sm:w-[28.25rem] sm:h-auto rounded-t-lg shadow-2xl 
+                    <Image src={imageUrl} alt={title} quality={95} className="sm:absolute top-8 -right-40  h-[20rem] w-auto sm:w-[28.25rem] sm:h-auto rounded-t-lg sm:shadow-2xl 
                     group-even:right-[initial] group-even:-left-40 sm:group-even:group-hover:translate-x-3 sm:group-even:group-hover:rotate-2
                     sm:group-hover:-translate-x-3 sm:group-hover:translate-y-3 sm:group-hover:-rotate-2 sm:group-hover:scale-[1.04] transition"/>
                 </div>

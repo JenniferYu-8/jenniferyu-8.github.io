@@ -2,9 +2,13 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png"; // FJ change images
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import glasses from "@/public/glasses.png"; // FJ change images
+import projectHer from "@/public/projecther.png";
+import remberU from "@/public/remberu.png";
+import canmun from "@/public/canmun.png";
+import emotionDetection from "@/public/emotion-detection.png";
+import vsLingoBingo from "@/public/vs-lingo-bingo.png";
+import portfolio from "@/public/portfolio.png";
 
 export const links = [
   {
@@ -62,25 +66,53 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "G.L.A.S.S.E.S.",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Smart glasses that can detect songs and display lyrics in real-time using a Raspberry Pi Zero 2 W and a transparent OLED display.",
+    tags: ["Raspberry Pi", "Python", "Flask", "React", "JavaScript"],
+    imageUrl: glasses,
   },
   {
-    title: "rmtDev",
+    title: "ProjectHer",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "A web app that Projects inspirational stories of Her future, encouraging girls to pursue their interests in tech and beyond!",
+    tags: ["Cohere", "Flask", "React", "Sass", "SQLAlchemy"],
+    imageUrl: projectHer,
   },
   {
-    title: "Word Analytics",
+    title: "RemberU",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "An AI powered device that reads the lips of the interlocutor and summarizes their points so that the person and conversation can always be remembered!",
+    tags: ["Flutter", "Firebase", "Python", "Flask", "OpenCV", "Gemini"],
+    imageUrl: remberU,
+  },
+  {
+    title: "CANMUN Website",
+    description:
+      "I designed and developed the website for the first iteration of Canada Model United Nations, where over 500 high school students from across Canada attended!",
+    tags: ["HTML", "Sass", "JavaScript"],
+    imageUrl: canmun,
+  },
+  {
+    title: "Emotion Detection",
+    description:
+      "A program that uses Multilayer Perceptrons to identify a person's emotion in real-time, distinguishing between five emotions with 74% accuracy.",
+    tags: ["Python", "TensorFlow", "Keras", "OpenCV", "Scikit-Learn", "Dlib"],
+    imageUrl: emotionDetection,
+  },
+  {
+    title: "VS Lingo Bingo",
+    description:
+      "A Chrome extension popup designed to help students stay engaged in their online classes during the pandemic by gamifying common pandemic-related phrases and actions.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    imageUrl: vsLingoBingo,
+  },
+  {
+    title: "Personal Portfolio",
+    description:
+      "You're looking at it right now! Keep tabs on my latest projects, experiences, education, and interests.",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion", "Resend", "Vercel"],
+    imageUrl: portfolio,
   },
 ] as const;
 
