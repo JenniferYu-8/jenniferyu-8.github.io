@@ -1,6 +1,4 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import glasses from "@/public/glasses.png"; // FJ change images
 import projectHer from "@/public/projecther.png";
 import remberU from "@/public/remberu.png";
@@ -32,10 +30,10 @@ export const links = [
     name: "Experience",
     hash: "#experience",
   },
-  {
-    name: "More",
-    hash: "#more",
-  },
+  // {
+  //   name: "More",
+  //   hash: "#more",
+  // },
   {
     name: "Contact",
     hash: "#contact",
