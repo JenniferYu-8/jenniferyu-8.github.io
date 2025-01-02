@@ -15,7 +15,7 @@ export default function Footer() {
             <a href="mailto:jenniferyu.on@gmail.com" className="bg-white p-[0.6rem] text-gray-700 flex items-center gap-2 text-[1.3rem] rounded-full borderBlack focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer dark:bg-white/10 dark:text-white/60 duration-500"><MdEmail /></a>
         </div>
         <small className="mb-2 block text-xs">
-            &copy; 2024 Jennifer Yu
+            &copy; 2025 Jennifer Yu
         </small>
     </footer>
   )

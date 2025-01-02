@@ -1,7 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import glasses from "@/public/glasses.png"; // FJ change images
 import projectHer from "@/public/projecther.png";
 import remberU from "@/public/remberu.png";
@@ -9,6 +8,12 @@ import canmun from "@/public/canmun.png";
 import emotionDetection from "@/public/emotion-detection.png";
 import vsLingoBingo from "@/public/vs-lingo-bingo.png";
 import portfolio from "@/public/portfolio.png";
+import UWaterloo from "@/icons/uwaterloo";
+import BxB from "@/icons/bxb";
+import Canmun from "@/icons/canmun";
+import YRHacks from "@/icons/yrhacks";
+import MapleHS from "@/icons/maplehs";
+import YRPC from "@/icons/yrpc";
 
 export const links = [
   {
@@ -39,28 +44,51 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    title: "Software Engineering | University of Waterloo",
+    location: "Waterloo, ON",
+    description: "● Website Director @ Waterloo Engineering Society\n● Core Member @ Wat.ai\n● Class Representative @ SE Society",
+    icon: React.createElement(UWaterloo),
+    date: "Sept. 2024 - Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Software Engineer Team Lead | Bit by Bit Coding",
+    location: "Portland, OR",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "● Develop interactive demos with DHTML that have taught 1000+ middle schoolers to code.\n● Provide my team members with feedback on UI/UX design and code quality.",
+    icon: React.createElement(BxB),
+    date: "July 2021 - Present",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "USG of Technology | CANMUN",
+    location: "Toronto, ON",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "● Designed and developed the Canada Model UN website.\n● Collaborated with 70+ staff members to organize the first iteration of the nationwide conference.",
+    icon: React.createElement(Canmun),
+    date: "Dec. 2022 - Aug. 2024",
+  },
+  {
+    title: "International Baccalaureate Diploma | Maple High School",
+    location: "Maple, ON",
+    description:
+      "● IB Grade: 45/45\n● Awards: Governor General’s Academic Medal, Lion’s Club Award, Academic Accomplishment Award (x4)\n● Activities: Computer Science Club (President), Rubik's Cube Club (Founder & President), Model UN (Vice President)",
+    icon: React.createElement(MapleHS),
+    date: "Sept. 2020 - June 2024",
+  },
+  {
+    title: "Co-Chair | York Region Hacks",
+    location: "Toronto, ON",
+    description:
+      "● Led a team of 15 students from 9 schools to organize the annual largest high school hackathon in Canada.\n● Provided 1000+ students, cumulatively, from 25+ schools, with the opportunity to experience a hackathon.\n● Organized 30+ workshops to educate participants on computer science topics such as cybersecurity.",
+    icon: React.createElement(YRHacks),
+    date: "May 2021 - June 2024",
+  },
+  {
+    title: "Deputy Prime Minister | York Region Presidents' Council",
+    location: "Toronto, ON",
+    description:
+      "● Liaised with 20 students from across the school board to represent 130,000+ student voices.\n● United student council presidents from 34 schools to brainstorm new student leadership opportunities.",
+    icon: React.createElement(YRPC),
+    date: "Nov. 2022 - June 2024",
   },
 ] as const;
 
@@ -108,7 +136,7 @@ export const projectsData = [
     imageUrl: vsLingoBingo,
   },
   {
-    title: "Personal Portfolio",
+    title: "Portfolio Website",
     description:
       "You're looking at it right now! Keep tabs on my latest projects, experiences, education, and interests.",
     tags: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion", "Resend", "Vercel"],

@@ -12,7 +12,7 @@ export default function Experience() {
     const { ref } = useSectionInView("Experience", 0.5);
     const { theme } = useTheme();
   return (
-    <section ref={ref} className="scroll-mt-28 mb-28 sm:mb-40" id="experience">
+    <section ref={ref} className="scroll-mt-28 mb-28 sm:mb-40 w-full" id="experience">
         <SectionHeading>My experience</SectionHeading>
         <VerticalTimeline lineColor="">
             {
@@ -40,8 +40,14 @@ export default function Experience() {
                             }}
                         >
                             <h3 className="font-semibold capitalize">{item.title}</h3>
-                            <p className="font-normal !mt-0">{item.location}</p>
-                            <p className="!mt-1 font-normal text-gray-700 dark:text-gray-100/75 transition-colors duration-500">{item.description}</p>
+                            <p className="font-normal !mt-0 text-gray-600 dark:text-gray-100/60 transition-colors duration-500">{item.location}</p>
+                            <p className="!mt-2 font-normal text-gray-700 dark:text-gray-100/75 transition-colors duration-500">
+                                {item.description.split("\n").map((line, index) => (
+                                    <span key={index} className="block mb-1">
+                                        {line}
+                                    </span>
+                                ))}
+                            </p>
                         </VerticalTimelineElement>
                     </React.Fragment>
             ))}
